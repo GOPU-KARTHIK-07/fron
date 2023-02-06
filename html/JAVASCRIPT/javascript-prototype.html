@@ -1,0 +1,31 @@
+<div id="my-div"></div>
+<p id="my-paragraph">This is the original text.</p>
+
+<script>
+  
+  var myParagraph = document.getElementById("my-paragraph");
+  
+  myParagraph.textContent = "This is the new text.";
+</script>
+
+<p id="my-paragraph" style="background-color: blue;">This is the original text.</p>
+
+<script>
+
+  var myParagraph = document.getElementById("my-paragraph");
+  
+  myParagraph.style.backgroundColor = "red";
+</script>
+
+
+<script>
+ 
+  var myDiv = document.getElementById("my-div");
+  
+  
+  var newParagraph = document.createElement("p");
+  newParagraph.textContent = "This is a new paragraph.";
+  
+ 
+  myDiv.appendChild(newParagraph);
+</script>
